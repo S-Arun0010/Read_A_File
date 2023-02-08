@@ -7,7 +7,7 @@ public class Files {
 	public static void main(String[] args)throws IOException 
 	{
 	  PrintStream print = new PrintStream(new FileOutputStream(FileDescriptor.out));
-      File filenew = new File("C:\\Users\\Arun Prabhu S\\Desktop\\story.txt");
+      File filenew = new File("\\Users\\Arun Prabhu S\\Desktop\\story.txt");
       HashMap<String,Integer> hs = new HashMap<>();
       LinkedHashMap<String, Integer> sortedmap = new LinkedHashMap<>();
       ArrayList<Integer> list = new ArrayList<>();
@@ -38,7 +38,7 @@ public class Files {
               }
           }
       }
-      for(HashMap.Entry<String,Integer> entry : sortedmap.entrySet() ){
+      for(Map.Entry<String,Integer> entry : sortedmap.entrySet() ){
     	   print.println( entry.getKey() + " = " + entry.getValue() );
     	}
 	}
